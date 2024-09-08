@@ -1,0 +1,50 @@
+form {
+  width: 100%;
+  max-width: 400px;
+}
+
+.input-wrapper {
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem;
+  border-radius: 12px;
+  background-color: var(--gray-300);
+  border: solid 2px transparent;
+  box-shadow: 0px 0px 0px 1px var(--gray-400);
+
+  &:has(input:placeholder-shown) button {
+    opacity: 0.6;
+  }
+
+  &:active {
+    border: solid 2px var(--pink);
+    box-shadow: none;
+  }
+
+  input {
+    all: unset;
+    flex: 1;
+    padding-left: 0.5rem;
+    color: var(--gray-700);
+  }
+
+  button {
+    all: unset;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--gray-700);
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    color: var(--white);
+
+    &:hover {
+      background-color: var(--gray-600);
+    }
+  }
+}
