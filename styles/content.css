@@ -24,8 +24,3 @@ main {
   background: var(--gray-100);
   border: solid 1px var(--gray-300);
 }
-
-#history {
-  border: solid 1px pink;
-  grid-area: D;
-}
