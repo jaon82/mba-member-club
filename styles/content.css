@@ -25,10 +25,6 @@ main {
   border: solid 1px var(--gray-300);
 }
 
-#cuts {
-  border: solid 1px red;
-  grid-area: C;
-}
 #history {
   border: solid 1px pink;
   grid-area: D;
