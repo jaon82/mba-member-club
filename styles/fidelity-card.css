@@ -66,3 +66,29 @@
     opacity: 0.35;
   }
 }
+
+@media (width > 600px) {
+  #fidelity-card {
+    padding: 2.25rem 2rem 2rem;
+  }
+
+  .card-id {
+    height: 2rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .slots-container {
+    gap: 1rem;
+  }
+
+  .slots-item {
+    width: 5.5rem;
+    height: 5.5rem;
+    font-size: 2.5rem;
+
+    img {
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+}

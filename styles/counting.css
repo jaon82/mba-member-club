@@ -4,6 +4,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 1.5rem;
+  padding: 1rem 1.25rem;
 }
 
 .counting-container {
@@ -61,10 +62,36 @@
   height: 3.5rem;
   border-radius: 777px;
   background: var(--gray-200);
+  padding-top: 0.5rem;
 
   img {
     width: 2.5rem;
-    height: 2.5rem;
-    object-fit: contain;
+  }
+}
+
+@media (width > 600px) {
+  #cuts {
+    padding: 2rem;
+  }
+
+  .counting-container {
+    > span {
+      font-size: var(--text--md);
+
+      &::first-letter {
+        font-size: var(--title--md);
+        font-weight: bold;
+      }
+    }
+  }
+
+  .gift-container {
+    width: 4.5rem;
+    height: 4.5rem;
+    padding-top: 1rem;
+
+    img {
+      width: 4rem;
+    }
   }
 }

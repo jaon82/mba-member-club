@@ -40,5 +40,12 @@ html {
 }
 body {
   background-color: var(--gray-200);
+  padding-block: 2rem 1rem;
   padding-inline: 0.75rem;
+}
+
+@media (width > 600px) {
+  body {
+    padding-block: 4rem;
+  }
 }
