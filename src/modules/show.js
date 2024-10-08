@@ -74,11 +74,11 @@ export const clientShow = (client) => {
     (client.loyaltyCard.totalCuts * 100) / client.loyaltyCard.cutsNeeded;
   progressIndicator.style.width = `${progressPercentage}%`;
   if (progressPercentage === 100) {
-    modal.classList.remove("modal-hidden");
+    modal.classList.remove("hide");
     modal.classList.add("modal");
     setTimeout(() => {
       modal.classList.remove("modal");
-      modal.classList.add("modal-hidden");
+      modal.classList.add("hide");
     }, 2000);
   }
 };

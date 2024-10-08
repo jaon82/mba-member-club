@@ -50,7 +50,7 @@ body {
   }
 }
 
-.modal-hidden {
+.hide {
   display: none;
 }
 .modal {

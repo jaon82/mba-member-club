@@ -3,9 +3,11 @@ import { clientShow } from "./show";
 
 const form = document.querySelector("form");
 const searchInput = document.querySelector("#cardId");
+const main = document.querySelector("main");
 
 form.onsubmit = async (event) => {
   event.preventDefault();
+  main.classList.add("hide");
   const clientId = searchInput.value.trim();
   searchInput.value = "";
   searchInput.blur();
@@ -16,5 +18,6 @@ form.onsubmit = async (event) => {
   const client = await clientFetchById(clientId);
   if (client) {
     clientShow(client);
+    main.classList.remove("hide");
   }
 };
