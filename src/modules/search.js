@@ -1,4 +1,5 @@
 import { clientFetchById } from "../services/client-fetch-by-id";
+import { clientShow } from "./show";
 
 const form = document.querySelector("form");
 const searchInput = document.querySelector("#cardId");
@@ -11,4 +12,7 @@ form.onsubmit = async (event) => {
     return;
   }
   const client = await clientFetchById(clientId);
+  if (client) {
+    clientShow(client);
+  }
 };
