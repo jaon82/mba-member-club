@@ -10,6 +10,7 @@ const cutsProgressText = document.querySelector(
   ".counting-bar-container > span"
 );
 const progressIndicator = document.querySelector(".progress-indicator");
+const modal = document.querySelector("#js-modal");
 
 function clearInfo() {
   avatarImg.src = `src/assets/user.jpg`;
@@ -72,4 +73,12 @@ export const clientShow = (client) => {
   const progressPercentage =
     (client.loyaltyCard.totalCuts * 100) / client.loyaltyCard.cutsNeeded;
   progressIndicator.style.width = `${progressPercentage}%`;
+  if (progressPercentage === 100) {
+    modal.classList.remove("modal-hidden");
+    modal.classList.add("modal");
+    setTimeout(() => {
+      modal.classList.remove("modal");
+      modal.classList.add("modal-hidden");
+    }, 2000);
+  }
 };
