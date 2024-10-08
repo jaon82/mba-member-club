@@ -7,6 +7,7 @@ const searchInput = document.querySelector("#cardId");
 form.onsubmit = async (event) => {
   event.preventDefault();
   const clientId = searchInput.value.trim();
+  searchInput.value = "";
   if (!/^[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{3}$/.test(clientId)) {
     alert("ID inválido");
     return;
