@@ -1,0 +1,24 @@
+{
+  "name": "member-club",
+  "description": "Aplicação Web para visualização de cartões fidelidade",
+  "author": {
+    "name": "Jean Nunes"
+  },
+  "scripts": {
+    "server": "json-server server.json --port 3333",
+    "dev": "webpack serve",
+    "build": "webpack"
+  },
+  "dependencies": {
+    "json-server": "^1.0.0-beta.3"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^12.0.2",
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.0",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0"
+  }
+}
